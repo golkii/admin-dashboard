@@ -1,1 +1,1 @@
-This is a exercise from "The Odin Project" course. It's just a pratice on.
+This is a exercise from "The Odin Project" course. It's just a pratice.
