@@ -27,6 +27,19 @@
   padding: 20px 40px 10px 40px;
   display: grid;
   grid-template-columns: 3fr 2fr;
+  align-items: center;
+}
+
+.search {
+  display: grid;
+  grid-template-columns: 22px auto;
+  gap: 15px;
+  align-content: center;
+  align-items: center;
+}
+
+.icon-black {
+  height: 22px;
 }
 
 .search>input {
@@ -35,6 +48,7 @@
   height: 25px;
   background-color: #dbecf5;
   border: 0;
+  padding: 12px;
 }
 
 .account-menu {
@@ -42,6 +56,12 @@
   grid-template-columns: repeat(3, max-content);
   gap: 20px;
   justify-self: right;
+  align-items: center;
+}
+
+.avatar>img {
+  width: 40px;
+  border-radius: 20px;
 }
 
 .low-header {
@@ -66,7 +86,8 @@
 }
 
 .name-header {
-  font-size: 20px;
+  font-size: 22px;
+  align-self: flex-start;
 }
 
 .header-buttons {
@@ -85,6 +106,11 @@
   height: 35px;
   border-radius: 18px;
 }
+
+
+
+
+
 
 .sidebar {
   background-color: #0c4a6e;
@@ -120,6 +146,12 @@
 
 .icon {
   justify-self: center;
+  height: 18px;
+  align-self: center;
+}
+
+.icon:first-child {
+  fill: white;
 }
 
 
@@ -127,4 +159,57 @@
 
 .main {
   background-color: #dbecf5;
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 20px 30px 30px 20px;
+  gap: 20px;
+}
+
+.main>div>p {
+  font-weight: 500;
+  margin: 10px 0;
+  font-size: 18px; 
+}
+
+.your-projects {
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+  align-self: stretch;
+  height: minmax(100vh, fit-content);
+}
+
+.project-block {
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 8px;
+  border-left: 8px solid #cba116;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+.project-block>p {
+  font-size: 14px;
+  color: #818181;
+}
+
+.block-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  gap: 25px;
+}
+
+.anouncement-block, .trending-block {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  height: 40%;
 }
